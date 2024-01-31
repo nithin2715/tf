@@ -10,7 +10,7 @@ pipeline {
                 sh 'mvn clean install'
             }
         }
-        stage('Build docker imag'){
+        stage('Build docker imagdiff'){
             steps{
                 script{
                     sh 'docker build -t javatechie/devops-integration .'

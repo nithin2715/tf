@@ -10,7 +10,7 @@ pipeline {
                 sh 'mvn clean install'
             }
         }
-        stage('Build docker image'){
+        stage('Build docker imag'){
             steps{
                 script{
                     sh 'docker build -t javatechie/devops-integration .'
